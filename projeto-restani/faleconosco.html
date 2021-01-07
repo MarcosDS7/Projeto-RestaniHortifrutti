@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Restani | Fale Conosco</title>
+  <link rel="stylesheet" href="./css/faleconosco.css">
+</head>
+
+<body>
+
+  <section class="beforeHeader">
+    <a href="#" class="number">
+      <p>(16)90000-0000</p>
+      <img src="./img/Ligar_icon.png" alt="Número Restani">
+    </a>
+    <a href="https://api.whatsapp.com/send?1=pt_BR&phone=55169900000000" class="whastapp" target="_blank" class="whatsapp">
+      <p>Compre pelo whatsapp</p>
+      <img src="img/icon_whatsapp.png" alt="Whatsapp Restani">
+    </a>
+  </section>
+
+
+  <header class="header">
+    <a href="home.html"><img src="img/LOGO.png" alt="LOGO"></a>
+    <nav>
+      <ul>
+        <li><a href="quemsomos.html">Quem Somos</a></li>
+        <li><a href="produtos.html">Produtos</a></li>
+        <li><a href="faleconosco.html" class="active">Fale conosco</a></li>
+      </ul>
+    </nav>
+  </header>
+
+
+  <section class="introduce">
+    <div class="quote">
+      <h1>Fale conosco</h1>
+      <p>Converse com a gente, sentiu falta de algum produto? Alguma dúvida ou sugestão? </p>
+      <a class="button" href="#conta">Saiba mais</a>
+    </div>
+  </section>
+
+  <main class="contact" id="conta">
+    <h2>Preencha o formulário</h2>
+
+    <form action="" id="form">
+      <input type="text" class="FormName" id="name" placeholder="Nome">
+      <input type="email" class="FormEmail" id="email" placeholder="E-mail">
+      <input type="text" class="FormAssunto" id="assunto" placeholder="Assunto">
+      <textarea name="mensage" class="FormMessage" id="msg" id="mensage" cols="30" rows="10" placeholder="Mensagem"></textarea>
+      <p id="result"></p>
+      <button type="submit" id="btnEnviar">Enviar</button>
+    </form>
+  </main>
+
+
+  <section class="duvidas">
+    <h2>Dúvidas Frequentes</h2>
+
+    <div class="duv">
+      <select name="duv_select" id="duv_select" class="duvSele">
+        <option value="">Clique para escolher a Dúvidas</option>
+        <option value="pedi">Como fazer o pedido?</option>
+        <option value="produ">Como posso ver os produtos?</option>
+        <option value="rede">Onde acessar as redes sociais?</option>
+        <option value="ond">Onde saber mais sobre a Restani?</option>
+      </select>
+      <p class="resultDuClass" id="resuldDu"></p>
+      <div class="imgMen">
+        <img src="img/duvidas_faleConosco.png" alt="Duvidas frequentes Restani">
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <ul class="cate_footer">
+      <li class="contato">
+        <h3>Atendimento</h3>
+        <a href="">(16) 98119-5953</a>
+        <a href="">restani@restani.com</a>
+        <a href="">Compre pelo whatsapp</a>
+        <a href="#du">Duvidas frequentes</a>
+      </li>
+
+      <li class="mapSite">
+        <h3>Mapa do Site</h3>
+        <a href="home.html">Página inicial</a>
+        <a href="quemsomos.html">Quem somos</a>
+        <a href="produtos.html">Produtos</a>
+        <a href="faleconosco.html">Fale conosco</a>
+      </li>
+
+      <li class="logRestani">
+        <a href="home.html"><img class="Logotipo_navbar" src="img/LOGO.png" alt="LOGO"></a>
+      </li>
+
+      <li class="redeSocial">
+        <h3>Siga-nos</h3>
+        <a href="https://www.facebook.com/Horti-fruti-Restani-Delivery-104325184547998" target="_blank">
+          <img src="./img/logo-fb.jpg" alt="Facebook Restani">
+        </a>
+      </li>
+    </ul>
+  </footer>
+
+  <section class="afterFooter">
+    <p class="copy">© 2020 Restani Hortifrutti. Todos os direitos reservados.</p>
+    <p class="end">Estrada Municipal Taquaritinga A Guariroba Km 1, S/N- Chacára Restani Taquaritinga - SP</p>
+  </section>
+
+  <script src="js/faleconosco.js"></script>
+</body>
+
+</html>

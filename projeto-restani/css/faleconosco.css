@@ -1,0 +1,415 @@
+@charset "utf-8";
+
+*,
+html {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+a,
+ul,
+ol {
+  color: #525453;
+  text-decoration: none;
+  list-style: none;
+}
+
+.beforeHeader {
+  width: 100%;
+  height: 60px;
+  padding: 0 100px;
+
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+
+  background: #f5f7f3;
+}
+.beforeHeader a {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  width: 180px;
+  height: 40px;
+  margin-left: 30px;
+
+  background-color: #f2f3f0;
+  border: 1px solid #0002;
+  border-radius: 7px;
+
+  font-size: 12px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+}
+/* ---------------------------------------------------------------- */
+.header {
+  width: 100%;
+  height: 90px;
+  padding: 0 80px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  background-color: #fff;
+}
+.header nav ul {
+  display: flex;
+}
+.header nav ul li a {
+  font-size: 18px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 500;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+
+  padding: 20px;
+
+  color: #00672f;
+
+  transition: color linear 0.2s;
+}
+.header nav ul li a:hover {
+  color: #fb8b07;
+  transition: color linear 0.2s;
+}
+.header nav ul li a.active {
+  color: #fb8b07;
+}
+/* ------------------------------------------- */
+
+.introduce {
+  width: 100%;
+  height: 420px;
+  padding: 0 80px;
+
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+
+  background: url("../img/faleConosco.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.introduce .quote {
+  width: 400px;
+}
+.introduce .quote h1 {
+  font-size: 42px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  letter-spacing: 1px;
+  margin: 15px 0;
+
+  color: #fff;
+}
+.introduce .quote p {
+  font-size: 18px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 300;
+  letter-spacing: 0.5px;
+
+  color: #fff;
+}
+.introduce .quote .button {
+  width: 150px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 15px 0;
+
+  font-size: 18px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 300;
+  letter-spacing: 0.5px;
+
+  border-radius: 5px;
+  background: #00672f;
+  color: #f2f3f0;
+
+  transition: transform linear 0.3s;
+}
+.introduce .quote .button:hover {
+  transform: scale(1.1);
+  transition: transform linear 0.3s;
+}
+/* ------------------------------------------------------- */
+.contact {
+  width: 100%;
+  height: 430px;
+
+  display: grid;
+  align-items: flex-start;
+
+  margin: 10px 0;
+  padding: 0 80px;
+
+  background-color: #fff;
+}
+.contact h2 {
+  font-size: 28px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+
+  padding: 30px 0 0;
+
+  color: #00672f;
+}
+.contact form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 45px 45px 100px 20px;
+
+  row-gap: 15px;
+  column-gap: 15px;
+  margin-top: -60px;
+
+  position: relative;
+}
+
+.contact form .FormName,
+.contact form .FormEmail,
+.contact form .FormAssunto,
+.contact form .FormMessage {
+  width: 100%;
+
+  font-size: 18px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 300;
+  letter-spacing: 0.5px;
+
+  color: #525453;
+  border: 2px solid #0006;
+  border-radius: 3px;
+
+  outline: none;
+
+  padding: 0px 15px;
+}
+.contact form .FormName {
+  grid-column: 1/2;
+  height: 50px;
+}
+.contact form .FormEmail {
+  grid-column: 2/3;
+  height: 50px;
+}
+.contact form .FormAssunto {
+  grid-column: 1/3;
+  height: 50px;
+}
+.contact form .FormMessage {
+  grid-column: 1/3;
+  height: 120px;
+  padding-top: 10px;
+  resize: none;
+}
+.contact form button {
+  width: 150px;
+  height: 40px;
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+  margin: 15px 0;
+
+  font-size: 18px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 300;
+  letter-spacing: 0.5px;
+
+  border: none;
+  border-radius: 5px;
+  background: #00672f;
+  color: #f2f3f0;
+
+  transition: transform linear 0.3s;
+
+  position: absolute;
+  right: 0;
+  top: 250px;
+}
+.contact form button:hover {
+  transform: scale(1.1);
+  transition: transform linear 0.3s;
+  cursor: pointer;
+}
+/* ---------------------------------------------------------- */
+.duvidas {
+  width: 100%;
+  height: 300px;
+  display: grid;
+
+  padding: 0 80px;
+  background: #efecec;
+  position: relative;
+}
+
+.duvidas h2 {
+  font-size: 28px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+
+  padding: 30px 0;
+
+  color: #00672f;
+}
+
+.duvidas .duv {
+  display: grid;
+  grid-template-columns: 400px 400px 1fr;
+  grid-template-rows: 45px 45px 55px;
+
+  row-gap: 30px;
+  column-gap: 15px;
+  margin-top: 0px;
+}
+.duvidas .duv .duvSele {
+  grid-column: 1/2;
+
+  font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 300;
+  letter-spacing: 0.5px;
+
+  color: #525453;
+  border: 2px solid #0006;
+  border-radius: 3px;
+
+  outline: 0;
+  padding: 0px 15px;
+}
+.duvidas .duv .resultDuClass {
+  grid-column: 1/2;
+  width: 300px;
+
+  font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 300;
+  letter-spacing: 0.5px;
+
+  color: #525453;
+}
+.duvidas .duv .imgMen {
+  display: grid;
+  grid-column: 3/4;
+  grid-row: 1/4;
+}
+.duvidas .duv .imgMen img {
+  width: 100%;
+  height: 100%;
+}
+/* ----------------------------------------------------------- */
+.footer {
+  width: 100%;
+  height: 250px;
+  padding: 0 80px;
+
+  display: grid;
+  align-items: center;
+
+  background-color: #fff;
+}
+.footer ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.footer ul li h3 {
+  font-size: 18px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+
+  padding: 15px 0;
+
+  color: #00672f;
+}
+.footer ul li.logRestani {
+  padding-top: 5px;
+}
+
+.footer ul li a {
+  display: block;
+
+  font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 300;
+  letter-spacing: 0.5px;
+
+  padding: 5px 5px 5px 0px;
+
+  color: #525453;
+  transition: color linear 0.2s;
+}
+.footer ul li a:hover {
+  transition: color linear 0.2s;
+  color: #000;
+}
+
+.footer ul li.redeSocial a img {
+  width: 50px;
+  height: 50px;
+}
+/* ---------------------------------- */
+.afterFooter {
+  width: 100%;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 0 80px;
+
+  background: #efecec;
+}
+.afterFooter p {
+  display: block;
+}
+
+.afterFooter .copy,
+.afterFooter .end {
+  font-size: 14px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+
+  padding: 5px;
+
+  color: #525453;
+}
+.afterFooter .end {
+  color: #525453;
+  font-size: 16px;
+  font-weight: 300;
+}
+
+/* --------------------------------------------------- */
+/* CSS PARA AJUDA ----- */
+.error {
+  padding: 10px;
+  color: #f00;
+  font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 300;
+  letter-spacing: 0.5px;
+}
+.errorBorder {
+  border: 1px solid #f00;
+}
+.right {
+  border: 1px solid #228000;
+}
+.normal {
+  border: 1px solid #000;
+}
+/* -------------------------------------------- */
